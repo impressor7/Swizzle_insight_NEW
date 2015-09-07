@@ -1,0 +1,92 @@
+.header {
+  height : 160px;
+  background-color : black;
+}
+
+.header h1 {
+  text-align : center;
+  color : red;
+  height : 90px;
+  padding-top : 30px;
+  font-size : 50px;
+
+}
+
+.header p {
+  padding-left : 550px;
+  font-size : 20px;
+  color : white;
+  font-weight : bold;
+}
+
+.nav .container ul {
+  text-align : center;
+  height : 100px;
+  padding-top : 50px;
+}
+
+.nav .container a {
+    display : inline;
+    text-decoration : none;
+    font-weight : bold;
+    color : white;
+    background-color : black;
+    font-size :20px;
+    padding-right : 20px;
+    padding-left : 20px;
+    text-align : center;
+    margin : 7px;
+  }
+'''
+여기서부터 문제인데 왜이러지
+'''
+}
+
+.content .container1 ul  {
+  background-color : black;
+  height : 390px;
+}
+
+.content .container3 {
+  height : 390px;
+  border-style : ridge;
+}
+
+
+.content .container1 li {
+  list-style-type : none;
+  padding-bottom : 20px;
+  padding-top : 20px;
+  font-size : 20px;
+  font-weight : bold;
+  text-decoration : none;
+  width : 50%;
+  height : 50%;
+  text-align : center;
+  background-color : gray;
+  color : white;
+  line-height : 5px;
+  margin : 30px;
+  margin-left : 150px;
+  margin-top : 17px;
+}
+
+.container2 li{
+  list-style-type : none;
+  padding-bottom : 20px;
+  padding-top : 20px;
+  width : 70%;
+  height : 50%;
+  text-align : center;
+  border-style : ridge;
+  margin : 30px;
+  margin-left : 10px;
+  margin-top : 17px;
+}
+
+
+.copyright {
+  text-align : right;
+  font-weight : bold;
+  margin-top : 20px;
+}
