@@ -49,11 +49,28 @@
 
 .content .container3 {
   height : 390px;
-  border-style : ridge;
 }
 
 
-.content .container1 li {
+.container1 li {
+  list-style-type : none;
+  padding-bottom : 20px;
+  padding-top : 20px;
+  font-size : 20px;
+  font-weight : bold;
+  text-decoration : none;
+  width : 100%;
+  height : 90%;
+  text-align : center;
+  background-color : gray;
+  color : white;
+  line-height : 5px;
+  margin : 30px;
+  margin-left : 240px;
+  margin-top : 34px;
+}
+
+.container2 li{
   list-style-type : none;
   padding-bottom : 20px;
   padding-top : 20px;
@@ -61,27 +78,21 @@
   font-weight : bold;
   text-decoration : none;
   width : 50%;
-  height : 50%;
-  text-align : center;
-  background-color : gray;
-  color : white;
+  height : 90%;
+  text-align : left;
+  background-color : white;
+  color : black;
   line-height : 5px;
-  margin : 30px;
-  margin-left : 150px;
-  margin-top : 17px;
+  margin : 30px 0px 34.5px 200px;
 }
 
-.container2 li{
-  list-style-type : none;
-  padding-bottom : 20px;
-  padding-top : 20px;
-  width : 70%;
-  height : 50%;
-  text-align : center;
+.container1 p {
+  text-align:center;
+  font-size : 20px;
+  font-weight : bold;
+  width : 700px;
   border-style : ridge;
-  margin : 30px;
-  margin-left : 10px;
-  margin-top : 17px;
+  margin-left : 200px;
 }
 
 

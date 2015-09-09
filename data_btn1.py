@@ -60,7 +60,7 @@ def main():
             i9.append(i['_id'])
         elif len(i['_songs']) == 10 :
             i10.append(i['_id'])
-        elif len(i['_songs']) >= 10 :
+        elif len(i['_songs']) > 10 :
             i_more.append(i['_id'])
 
 
@@ -76,6 +76,18 @@ def main():
     j = str(len(i9))
     k = str(len(i10))
     l = str(len(i_more))
+
+    import matplotlib.pyplot as plt
+    x = [0,1,2,3,4,5,6,7,8,9,10,11]
+    y = [a,b,c,d,e,m,g,h,i,j,k,l]
+    plt.plot (x,y,linewidth = 5, label = 'the number of playlist')
+    plt.title('About Playlist Graph')
+    plt.xlabel('The number of song in a playlist')
+    plt.ylabel('The number of playlist')
+    plt.legend()
+    plt.grid(True, color = 'b')
+    plt.savefig('1.png')
+
 
     f = open('btn_1.html', 'w')
 
@@ -136,7 +148,7 @@ def main():
                             "</ul>" \
                         "</div>" \
                         "<div class = 'container3 col-sm-6'>" \
-                            "<h3>Graph</h3>" \
+                            "<img src='1.png'>" \
                         "</div>" \
                     "</div>" \
                     "<div class = 'last'>" \
