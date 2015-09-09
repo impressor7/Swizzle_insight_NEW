@@ -122,6 +122,9 @@ def main():
                                       "</ul>" \
                                 "</div>" \
                                 "<div class = 'container3 col-sm-6'>" \
+                                "<ul>"\
+                                    "<a href ='#'>Update</a>"\
+                                "</ul>" \
                                   "<img src='4.png'>" \
                                 "</div>" \
                             "</div>"\
@@ -140,5 +143,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-

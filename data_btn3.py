@@ -80,7 +80,7 @@ def main():
     c6 =0
     for i in results2 :
         for o in range(4):
-            if i['recent'] > datetime.now() - timedelta(days=1) and i['recent'] < datetime.now() :
+            if i['recent'] >= datetime.now() - timedelta(days=7) and i['recent'] <= datetime.now() :
                 if i['action'] == 'ADD_SONG_TO_PLAYLIST':
                     a0 += 1
                 elif i['action'] == 'LIKE_PLAYLIST' :
@@ -89,7 +89,7 @@ def main():
                     f0 +=1
                 elif i['action'] == 'ADD_COMMENT_PLAYLIST' :
                     c0 +=1
-            elif i['recent'] > datetime.now() - timedelta(days=2) and i['recent'] < datetime.now() :
+            elif i['recent'] >= datetime.now() - timedelta(days=7) and i['recent'] <= datetime.now()-timedelta(days=1) :
                 if i['action'] == 'ADD_SONG_TO_PLAYLIST':
                     a1 += 1
                 elif i['action'] == 'LIKE_PLAYLIST' :
@@ -98,7 +98,7 @@ def main():
                     f1 +=1
                 elif i['action'] == 'ADD_COMMENT_PLAYLIST' :
                     c1 +=1
-            elif i['recent'] > datetime.now() - timedelta(days=3) and i['recent'] < datetime.now() :
+            elif i['recent'] >= datetime.now() - timedelta(days=7) and i['recent'] <= datetime.now()-timedelta(days=2) :
                 if i['action'] == 'ADD_SONG_TO_PLAYLIST':
                     a2 += 1
                 elif i['action'] == 'LIKE_PLAYLIST' :
@@ -107,7 +107,7 @@ def main():
                     f2 +=1
                 elif i['action'] == 'ADD_COMMENT_PLAYLIST' :
                     c2 +=1
-            elif i['recent'] > datetime.now() - timedelta(days=4) and i['recent'] < datetime.now() :
+            elif i['recent'] >= datetime.now() - timedelta(days=7) and i['recent'] <= datetime.now()-timedelta(days=3) :
                 if i['action'] == 'ADD_SONG_TO_PLAYLIST':
                     a3 += 1
                 elif i['action'] == 'LIKE_PLAYLIST' :
@@ -116,7 +116,7 @@ def main():
                     f3 +=1
                 elif i['action'] == 'ADD_COMMENT_PLAYLIST' :
                     c3 +=1
-            elif i['recent'] > datetime.now() - timedelta(days=5) and i['recent'] < datetime.now() :
+            elif i['recent'] >= datetime.now() - timedelta(days=7) and i['recent'] <= datetime.now()-timedelta(days=4) :
                 if i['action'] == 'ADD_SONG_TO_PLAYLIST':
                     a4 += 1
                 elif i['action'] == 'LIKE_PLAYLIST' :
@@ -125,7 +125,7 @@ def main():
                     f4 +=1
                 elif i['action'] == 'ADD_COMMENT_PLAYLIST' :
                     c4 +=1
-            elif i['recent'] > datetime.now() - timedelta(days=6) and i['recent'] < datetime.now() :
+            elif i['recent'] >= datetime.now() - timedelta(days=7) and i['recent'] <= datetime.now()-timedelta(days=5) :
                 if i['action'] == 'ADD_SONG_TO_PLAYLIST':
                     a5 += 1
                 elif i['action'] == 'LIKE_PLAYLIST' :
@@ -134,7 +134,7 @@ def main():
                     f5 +=1
                 elif i['action'] == 'ADD_COMMENT_PLAYLIST' :
                     c5 +=1
-            elif i['recent'] > datetime.now() - timedelta(days=7) and i['recent'] < datetime.now() :
+            elif i['recent'] >= datetime.now() - timedelta(days=7) and i['recent'] <= datetime.now()-timedelta(days=6) :
                 if i['action'] == 'ADD_SONG_TO_PLAYLIST':
                     a6 += 1
                 elif i['action'] == 'LIKE_PLAYLIST' :
@@ -215,6 +215,9 @@ def main():
                                 "</ul>" \
                             "</div>" \
                             "<div class = 'container3 col-sm-6'>" \
+                            "<ul>"\
+                                "<a href ='#'>Update</a>"\
+                            "</ul>" \
                                 "<img src='3.png'>" \
                             "</div>" \
                         "</div>" \
@@ -235,5 +238,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
