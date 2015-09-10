@@ -1,4 +1,5 @@
-from datetime import datetime
+__author__ = 'ideabove01'
+
 
 from pymongo import MongoClient
 
@@ -13,8 +14,6 @@ elif env == 'production':
 
 from datetime import datetime, timedelta
 from collections import Counter
-import operator
-
 
 def main():
     client = MongoClient(MONGODB_URI)
@@ -51,6 +50,9 @@ def main():
     fourth1 =str(final_value[3])
     fifth = str(final_key[4])
     fifth1 =str(final_value[4])
+
+    print (first,second,third,fourth,fifth)
+    print (first1,second1,third1,fourth1,fifth1)
 
     a0 = 0
     a1 = 0
@@ -165,91 +167,38 @@ def main():
                 d6 +=1
             elif item['country'] == fifth :
                 e6 +=1
-    import matplotlib.pyplot as plt
-    x = [0,1,2,3,4,5,6]
-    y = [a0,a1,a2,a3,a4,a5,a6]
-    x1 = [0,1,2,3,4,5,6]
-    y1 = [b0,b1,b2,b3,b4,b5,b6]
-    x2 = [0,1,2,3,4,5,6]
-    y2 = [c0,c1,c2,c3,c4,c5,c6]
-    x3 = [0,1,2,3,4,5,6]
-    y3 = [d0,d1,d2,d3,d4,d5,d6]
-    x4 = [0,1,2,3,4,5,6]
-    y4 = [e0,e1,e2,e3,e4,e5,e6]
-    plt.grid(True, color = 'b')
-    plt.plot (x,y, linewidth=5,label =first)
-    plt.plot(x1,y1, linewidth=5,label =second)
-    plt.plot(x2,y2, linewidth=5,label =third)
-    plt.plot(x3,y3, linewidth=5,label = fourth)
-    plt.plot(x4,y4, linewidth=5,label = fifth)
-    plt.legend(loc=1)
-    plt.title('About Country Graph')
-    plt.xlabel('The number of song in a playlist')
-    plt.ylabel('The number of playlist')
-    plt.savefig('2.png')
+
+    print (a0,a1,a2,a3,a4,a5,a6)
+    print (b0,b1,b2,b3,b4,b5,b6)
+    print (c0,c1,c2,c3,c4,c5,c6)
+    print (d0,d1,d2,d3,d4,d5,d6)
+    print (e0,e1,e2,e3,e4,e5,e6)
 
 
-    f = open('btn_2.html', 'w')
-
-    message = "<!DOCTYPE html>" \
-                "<html>" \
-                  "<head>" \
-                    "<link rel='stylesheet' href='btn_2.css'>" \
-                    "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>" \
-                  "</head>" \
-                    "<body>"\
-                      "<div class = 'header'>" \
-                        "<div class = 'container'>" \
-                          "<h1 class='topic'>Swizzle Insight</h1>" \
-                          "<p>All information from Swizzle Database, you can get here</p>" \
-                        "</div>" \
-                      "</div>" \
-                      "<div class = 'nav'>" \
-                        "<div class = 'container'>" \
-                          "<ul>" \
-                            "<a class = 'btn1' href ='btn_1.html'>ABOUT PLAYLIST</a>" \
-                            "<a class = 'btn2' href ='btn_2.html'>ABOUT COUNTRY</a>" \
-                            "<a class = 'btn3' href ='btn_3.html'>ABOUT USER`S ACTION</a>"\
-                            "<a class = 'btn4' href ='btn_4.html'>ABOUT SEARCH KEYWORDS</a>"\
-                          "</ul>"\
-                        "</div>" \
-                      "</div>" \
-                    "<div class = 'content'>" \
-                        "<div class = 'container1 col-sm-3'>" \
-                          "<ul>" \
-                            "<li>"+"1. "+first+"</li>"\
-                            "<li>"+"2. "+second+"</li>" \
-                            "<li>"+"3. "+third+"</li>" \
-                            "<li>"+"4. "+fourth+"</li>" \
-                            "<li>"+"5. "+fifth+"</li>" \
-                            "<p>This is based on the number of playlist created in each country</p>" \
-                          "</ul>"\
-                        "</div>" \
-                        "<div class = 'container2 col-sm-3'>" \
-                          "<ul>" \
-                            "<li>"+": "+first1+"</li>" \
-                            "<li>"+": "+second1+"</li>" \
-                            "<li>"+": "+third1+"</li>" \
-                            "<li>"+": "+fourth1+"</li>" \
-                            "<li>"+": "+fifth1+"</li>" \
-                          "</ul>" \
-                        "</div>" \
-                        "<div class = 'container3 col-sm-6'>" \
-                          "<ul>"\
-                              "<p class='up-btn'>Update</p>"\
-                          "</ul>" \
-                          "<img src='2.png'>"\
-                        "</div>"\
-                    "</div>" \
-                    "<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>" \
-                    "<script src='2.js'></script>"\
-                    "</body>" \
-                "</html>" \
-
-    f.write(message)
-    f.close()
-
-
+    # import matplotlib.pyplot as plt
+    #
+    #
+    # x = [0,1,2,3,4,5,6]
+    # y = [a0,a1,a2,a3,a4,a5,a6]
+    # x1 = [0,1,2,3,4,5,6]
+    # y1 = [b0,b1,b2,b3,b4,b5,b6]
+    # x2 = [0,1,2,3,4,5,6]
+    # y2 = [c0,c1,c2,c3,c4,c5,c6]
+    # x3 = [0,1,2,3,4,5,6]
+    # y3 = [d0,d1,d2,d3,d4,d5,d6]
+    # x4 = [0,1,2,3,4,5,6]
+    # y4 = [e0,e1,e2,e3,e4,e5,e6]
+    # plt.grid(True,'b')
+    # plt.plot (x,y, linewidth=5,label =first)
+    # plt.plot(x1,y1, linewidth=5,label =second)
+    # plt.plot(x2,y2, linewidth=5,label =third)
+    # plt.plot(x3,y3, linewidth=5,label = fourth)
+    # plt.plot(x4,y4, linewidth=5,label = fifth)
+    # plt.legend(loc=1)
+    # plt.title('About Country Graph')
+    # plt.xlabel('The number of song in a playlist')
+    # plt.ylabel('The number of playlist')
+    # plt.savefig('test.png')
 
 if __name__ == '__main__':
-        main()
+    main()

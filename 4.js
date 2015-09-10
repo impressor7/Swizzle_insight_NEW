@@ -27,8 +27,7 @@ var jqxhr = function(){
 
         $.ajax({
             method:"GET",
-            url:"data_btn1.py",
-            dataType:"text"
+            url:"data_btn4.py",
         })
 
         .done(function() {
@@ -44,7 +43,6 @@ var jqxhr = function(){
         location.reload();
     })
 };
-
 
 
 $(document).ready(main)

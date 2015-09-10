@@ -149,14 +149,9 @@ def main():
                         "</div>" \
                         "<div class = 'container3 col-sm-6'>" \
                             "<ul>"\
-                                "<a href ='#'>Update</a>"\
+                                "<p class='up-btn'>Update</p>"\
                             "</ul>" \
                             "<img src='1.png'>" \
-                        "</div>" \
-                    "</div>" \
-                    "<div class = 'last'>" \
-                        "<div class = 'container'>" \
-                            "<p class='copyright'>MADE BY SEAN KIM IN SWIZZLE</p>" \
                         "</div>" \
                     "</div>" \
                     "<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>" \
@@ -168,5 +163,7 @@ def main():
     f.write(message)
     f.close()
 
+
 if __name__ == '__main__':
     main()
+

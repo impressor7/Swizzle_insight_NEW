@@ -1,3 +1,5 @@
+__author__ = 'ideabove01'
+
 from datetime import datetime
 
 from pymongo import MongoClient
@@ -143,95 +145,10 @@ def main():
                     f6 +=1
                 elif i['action'] == 'ADD_COMMENT_PLAYLIST' :
                     c6 +=1
-    # print (a0, a1, a2, a3, a4, a5, a6)
-    # print (l0, l1, l2, l3, l4, l5, l6)
-    # print (f0, f1, f2, f3, f4, f5, f6)
-    # print (c0, c1, c2, c3, c4, c5, c6)
-
-    import matplotlib.pyplot as plt
-
-    x = [0, 1, 2, 3, 4, 5, 6]
-    y = [a6,a5,a4,a3,a2,a1,a0]
-    add, = plt.plot (x,y,linewidth =5, label='ADD_SONGS')
-    x1 = [0, 1, 2, 3, 4, 5, 6]
-    y1 = [l6,l5,l4,l3,l2,l1,l0]
-    like, = plt.plot (x1,y1,linewidth =5,label = "LIKE_PLAYLIST" )
-    x2 = [0, 1, 2, 3, 4, 5, 6]
-    y2 = [f6,f5,f4,f3,f2,f1,f0]
-    follow, = plt.plot (x2,y2,linewidth =5,label = "FOLLOW_ME")
-    x3 = [0, 1, 2, 3, 4, 5, 6]
-    y3 = [c6,c5,c4,c3,c2,c1,c0]
-    comment, = plt.plot (x3,y3,linewidth =5,label = "COMMENT")
-    plt.title('About Users` Action Graph')
-    plt.xlabel('The week')
-    plt.ylabel("The number for user to do some action")
-    plt.legend(handles = [add, like, follow, comment])
-    plt.legend(loc=2)
-    plt.grid(True, color='b')
-    plt.savefig('3.png')
-
-
-    f = open('btn_3.html', 'w')
-
-    message = '<!DOCTYPE html>' \
-              '<html>' \
-                '<head>' \
-                    '<link rel="stylesheet" href="btn_3.css">' \
-                    '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">' \
-                '</head>' \
-                    '<body>' \
-                        "<div class = 'header'>" \
-                            "<div class = 'container'>" \
-                                "<h1 class='topic'>Swizzle Insight</h1>"\
-                                "<p>All information from Swizzle Database, you can get here</p>" \
-                             "</div>" \
-                        "</div>" \
-                        "<div class = 'nav'>" \
-                            "<div class = 'container'>" \
-                                "<ul>" \
-                                    "<a class = 'btn1' href ='btn_1.html'>ABOUT PLAYLIST</a>" \
-                                    '<a class = "btn2" href ="btn_2.html">ABOUT COUNTRY</a>' \
-                                    '<a class = "btn3" href ="btn_3.html">ABOUT USER`S ACTION</a>' \
-                                    '<a class = "btn4" href ="btn_4.html">ABOUT SEARCH KEYWORDS</a>' \
-                                "</ul>" \
-                            "</div>" \
-                        "</div>" \
-                        "<div class = 'content'>" \
-                            "<div class = 'container1 col-sm-3'>" \
-                                "<ul>" \
-                                    "<li>ADD SONG</li>" \
-                                    "<li>LIKE PLAYLIST</li>" \
-                                    "<li>FOLLOW ME</li>" \
-                                    "<li>ADD COMMENT</li>"\
-                                    "<p> 0 of x-axis means 6 days ago and 6 of x-axis means today </p>"\
-                                "</ul>" \
-                            "</div>" \
-                            "<div class = 'container2 col-sm-3'>" \
-                                "<ul>" \
-                                    "<li>"+ ": "+a+ "</li>" \
-                                    "<li>"+ ": "+b+ "</li>" \
-                                    "<li>"+ ": "+c+ "</li>" \
-                                    "<li>"+ ": "+d+ "</li>" \
-                                "</ul>" \
-                            "</div>" \
-                            "<div class = 'container3 col-sm-6'>" \
-                            "<ul>"\
-                                "<p class='up-btn'>Update</p>"\
-                            "</ul>" \
-                                "<img src='3.png'>" \
-                            "</div>" \
-                        "</div>" \
-                        "<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>" \
-                        "<script src='3.js'></script>" \
-                    "</body>" \
-                "</html>" \
-
-
-
-    f.write(message)
-    f.close()
-
+    print (a0, a1, a2, a3, a4, a5, a6)
+    print (l0, l1, l2, l3, l4, l5, l6)
+    print (f0, f1, f2, f3, f4, f5, f6)
+    print (c0, c1, c2, c3, c4, c5, c6)
 
 if __name__ == '__main__':
-        main()
-
+    main()
