@@ -16,34 +16,34 @@ var main = function() {
 
     });
     $('.topic').click(function() {
-      window.location.href = "1.html";
+      window.location.href = "/";
     });
 
 
 };
 
-var jqxhr = function(){
-    $('.up-btn').click(function(){
-
-        $.ajax({
-            method:"GET",
-            url:"http://127.0.0.1:8080/Swizzle_insight_NEW/data_btn1.py",
-            dataType:"text"
-        })
-
-        .done(function() {
-            alert("SUCCESS");
-        })
-        .fail(function(){
-            alert("ERROR");
-        })
-        .always(function(){
-            alert("COMPLETE");
-        });
-
-        location.reload();
-    })
-};
+//var jqxhr = function(){
+//    $('.up-btn').click(function(){
+//
+//        $.ajax({
+//            method:"GET",
+//            url:"http://127.0.0.1:8080/Swizzle_insight_NEW/data_btn1.py",
+//            dataType:"text"
+//        })
+//
+//        .done(function() {
+//            alert("SUCCESS");
+//        })
+//        .fail(function(){
+//            alert("ERROR");
+//        })
+//        .always(function(){
+//            alert("COMPLETE");
+//        });
+//
+//        location.reload();
+//    })
+//};
 
 
 //var python_update = function (){
@@ -66,5 +66,5 @@ var jqxhr = function(){
 
 
 $(document).ready(main)
-$(document).ready(jqxhr)
+//$(document).ready(jqxhr)
 //$(document).ready(python_update)

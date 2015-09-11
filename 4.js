@@ -27,7 +27,8 @@ var jqxhr = function(){
 
         $.ajax({
             method:"GET",
-            url:"data_btn4.py",
+            url:"http://127.0.0.1:8080/Swizzle_insight_NEW/data_btn4.py",
+            dataType:"text"
         })
 
         .done(function() {

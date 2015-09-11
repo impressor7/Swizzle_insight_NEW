@@ -16,7 +16,7 @@ var main = function() {
 
     });
     $('.topic').click(function() {
-      window.location.href = "1.html";
+      window.location.href = "/";
     });
 
 
@@ -27,7 +27,7 @@ var jqxhr = function(){
 
         $.ajax({
             method:"GET",
-            url:"http://127.0.0.1:8080/Swizzle_insight_NEW/data_btn3.py",
+            url:"http://127.0.0.1:8080/Swizzle_insight_NEW/data_btn4.py",
             dataType:"text"
         })
 

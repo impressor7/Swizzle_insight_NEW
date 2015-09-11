@@ -2,8 +2,6 @@
 The way to write something on file using python
 '''
 
-
-
 from pymongo import MongoClient
 
 env = 'production'
@@ -166,4 +164,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
